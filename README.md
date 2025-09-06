@@ -1,169 +1,80 @@
-# 🌸 Code-a-Pookalam 2025 🌸
-### *Create beautiful digital art through code this Onam season!*
-
----
-
-## 🎨 About the Challenge
-
-Welcome to **Code-a-Pookalam 2025** - a fun coding challenge organized by TinkerHub RIT! 
-
-Pookalam is a traditional floral carpet made during the festival of Onam in Kerala. In this challenge, we're bringing this beautiful tradition into the digital world! Use your creativity and coding skills to create stunning digital Pookalams using any programming language of your choice.
-
-Whether you're a beginner taking your first steps into programming or an experienced developer looking for a creative outlet, this challenge is for everyone! 🚀
-
----
-
-## 🚀 How to Participate
-
-Follow these simple steps to join the challenge:
-
-### 1️⃣ Fork this Repository
-Click the **Fork** button at the top right of this repository to create your own copy.
-
-### 2️⃣ Clone Your Fork
-```bash
-git clone https://github.com/[YOUR-USERNAME]/CODE-A-POOKALAM-2025-COMPETITION.git
-```
-
-### 3️⃣ Edit This README
-Replace this template README with your own submission details using the format provided below.
-
-### 4️⃣ Add Your Code
-Create your Pookalam using any programming language! Popular choices include:
-- 🐍 Python (with turtle, matplotlib, pygame)
-- 🌐 HTML/CSS/JavaScript
-- ☕ Java
-- 🎯 Processing
-- 🦀 Rust
-- And many more!
-
-### 5️⃣ Commit and Push to Your Fork
-```bash
-git add .
-git commit -m "My Code-a-Pookalam 2025 submission"
-git push origin main
-```
-
-### 6️⃣ Submit Your Repository
-Share your forked repository link with the organizers by **September 6, 2025**!
-
----
-
-## 📋 Rules
-
-1. **🍴 Fork Required**: You must fork this repository to participate
-2. **✏️ Edit README**: Replace this README with your submission details
-3. **💻 Any Language**: Use any programming language you're comfortable with
-4. **🎨 Be Creative**: Let your imagination run wild with colors, patterns, and designs
-5. **⏰ Deadline**: Submit your repository link by **September 6, 2025, 11:59 PM IST**
-6. **🤝 Be Respectful**: Keep your code clean and family-friendly
-7. **📸 Include Output**: Add screenshots or images of your Pookalam
-8. **✅ Original Work**: Submit only your original code
-
----
-
-## 📝 README Template for Your Submission
-
-**Once you fork this repository, replace this entire README.md with the following format:**
-
-```markdown
-# 🌸 [Your Name]'s Pookalam 2025 🌸
+# 🌸 Mevin's Pookalam 2025 🌸
 
 ## 👨‍💻 About Me
-- **Name:** [Your Full Name]
-- **Institution/Company:** [Your School/College/Company]
-- **GitHub:** [@your-username](https://github.com/your-username)
-- **Programming Language Used:** [Language]
+- **Name:** Mevin Aby Manu
+- **Institution/Company:** Mar Baselios Christian College of Engineering and Technology, Peermade
+- **GitHub:** [@MEV1N](https://github.com/MEV1N)
+- **Programming Language Used:** React
 
 ## 🎨 My Pookalam
 
 ### Description
-[Write a brief description of your Pookalam design, inspiration, or the approach you took]
+My digital Pookalam is a stunning web-based recreation of traditional Kerala floral art combined with the iconic Theyyam cultural heritage, built using React, TypeScript, and modern web technologies. This project beautifully merges the geometric precision of Pookalam designs with the mystical essence of Theyyam, creating a unique digital tribute to Kerala's rich cultural traditions.
+
+The design features intricate concentric patterns with alternating colored triangular borders, decorative geometric overlays, and a central Theyyam face that represents the divine performer from Kerala's traditional ritual art form. Using SVG graphics and React components, the Pookalam showcases layered circular patterns with vibrant colors including traditional reds, yellows, greens, and maroons that are characteristic of both Pookalam and Theyyam art forms.
+
+### Design Elements
+- **Outer Border**: 32 alternating red and yellow triangular petals forming the outermost ring
+- **Secondary Layer**: 24 triangular patterns in red and yellow creating depth
+- **Decorative Rings**: Maroon and cream colored circular bands
+- **Geometric Overlays**: Rotating rectangular patterns with transparency effects
+- **Central Theyyam**: Traditional Theyyam face with detailed eyes, nose, and decorative elements
+- **Floral Accents**: 28 small decorative flowers arranged in a circular pattern
 
 ### Preview
-![My Pookalam](output/pookalam-preview.png)
-*Add more images if you have multiple views or animations*
+![My Pookalam](img.png)
+*Digital Pookalam featuring Theyyam-inspired central design*
 
 ### Features
-- [Feature 1 - e.g., "Colorful geometric patterns"]
-- [Feature 2 - e.g., "Interactive elements"]
+- **Traditional Kerala Art Fusion**: Combines Pookalam floral patterns with Theyyam cultural elements
+- **Geometric Precision**: Mathematical arrangement of patterns and colors
+- **Cultural Authenticity**: Uses traditional Kerala color schemes and design motifs
+- **Responsive Design**: Built with modern web technologies for cross-device compatibility
 
 ## 🚀 How to Run
 
 ### Prerequisites
-[List any requirements, libraries, or software needed]
+Make sure you have Node.js (version 16 or higher) installed on your system.
+
+### Installation & Setup
 ```bash
-# Example for Python
-pip install matplotlib turtle numpy
+# Clone the repository
+git clone https://github.com/MEV1N/CODE-A-POOKALAM-2025-COMPETITION.git
+
+# Navigate to the project directory
+cd CODE-A-POOKALAM-2025-COMPETITION
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
 ```
 
-### Running the Code
+### Build for Production
 ```bash
-# Add your specific run commands here
-python pookalam.py
-# or
-open index.html
-# or your specific instructions
+# Build the project
+npm run build
+
+# Preview the production build
+npm run preview
 ```
 
-## 📁 File Structure
+### Technologies Used
+- **React 18**: Modern React with functional components
+- **TypeScript**: Type-safe JavaScript for better development experience
+- **Vite**: Fast build tool and development server
+- **Tailwind CSS**: Utility-first CSS framework for styling
+- **SVG Graphics**: Scalable vector graphics for the Pookalam design
+- **Framer Motion**: Animation library for smooth interactions
+- **Lucide React**: Beautiful icon library
+
+### Project Structure
 ```
-Code-a-Pookalam-2025/
-├── README.md (this file)
-├── pookalam.py (or your main file)
-└── requirements.txt (if applicable)
+src/
+├── App.tsx          # Main Pookalam component with SVG design
+├── main.tsx         # React application entry point
+├── index.css        # Global styles and Tailwind imports
+└── vite-env.d.ts    # TypeScript environment declarations
 ```
 
-## 🎊 Happy Onam! 🎊
-*Submitted for Code-a-Pookalam 2025 by TinkerHub RIT*
-```
-
----
-
-## 💡 Tips for Participants
-
-- **Get Creative**: Think beyond traditional Pookalam patterns - add animations, interactivity, or 3D effects!
-- **Document Well**: A good README makes your submission stand out
-- **Include Visuals**: Screenshots, GIFs, or videos make your work more engaging
-- **Share Your Process**: Explain your approach and what you learned
-- **Test Your Code**: Make sure others can run your code with clear instructions
-
----
-
-## 📚 Resources & Inspiration
-
-### Programming Resources
-- **Python Graphics**: Turtle, Matplotlib, Pygame, PIL etc
-
-### Pookalam Design Ideas
-- Traditional geometric patterns
-- Floral motifs and mandala designs
-- Colorful concentric circles
-- Interactive/animated elements
-- 3D rendered Pookalams
-
----
-
-## 🏢 Organizer Information
-
-**Event Organized By:** TinkerHub RIT  
-**Contact:** +91 8590483660  
-**Event Date:** September 2025  
-**Deadline:** September 6, 2025  
-
-### About TinkerHub RIT
-TinkerHub RIT is a community of makers, learners, and innovators at Rajiv Gandhi Institute of Technology. We organize various tech events, workshops, and coding challenges to foster creativity and learning in technology.
-
----
-
-## 🎊 Happy Coding & Happy Onam! 🎊
-
-*May your code bloom as beautifully as a traditional Pookalam!*
-
----
-
-**⭐ Don't forget to star this repository if you enjoyed the challenge!**
-
-### 🔗 Share Your Work
-After completing your submission, share it on social media with:
-**#CodeAPookalam2025 #TinkerHubRIT #Onam2025 #CodingChallenge**
