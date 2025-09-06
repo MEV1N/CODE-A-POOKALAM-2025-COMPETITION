@@ -22,7 +22,7 @@ The design features intricate concentric patterns with alternating colored trian
 - **Floral Accents**: 28 small decorative flowers arranged in a circular pattern
 
 ### Preview
-![My Pookalam](img.png)
+![My Pookalam](image.png)
 *Digital Pookalam featuring Theyyam-inspired central design*
 
 ### Features

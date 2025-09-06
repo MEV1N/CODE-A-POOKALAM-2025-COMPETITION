@@ -62,24 +62,47 @@ function App() {
               r="219"
               fill="yellow"
             />
-
-            {/* Additional triangles over the green circle */}
-            {Array.from({ length: 24 }).map((_, i) => {
-              const angle = (i * 360) / 24 + 2; // Offset to point to gaps between outer triangles
+            {/* Additional semi-circles over the green circle */}
+            {Array.from({ length: 20 }).map((_, i) => {
+              const angle = (i * 360) / 20 + 2; // Offset to point to gaps between outer triangles
               const isRed = i % 2 === 0;
-              const color = isRed ? '#DC2626' : '#FCD34D';
-              const innerRadius = 170;
-              const outerRadius = 215;
-              const angleWidth = 20;
+              const color = isRed ? 'blue' : 'blue';
+              const radius = 33; // Increased radius of each semi-circle
+              const centerRadius = 185; // Distance from center to semi-circle centers
+              const centerX = 250 + centerRadius * Math.cos(angle * Math.PI / 180);
+              const centerY = 250 + centerRadius * Math.sin(angle * Math.PI / 180);
               
               return (
-                <polygon
-                  key={`green-triangles-${i}`}
-                  points={`${250 + innerRadius * Math.cos((angle - angleWidth) * Math.PI / 180)},${250 + innerRadius * Math.sin((angle - angleWidth) * Math.PI / 180)} ${250 + outerRadius * Math.cos(angle * Math.PI / 180)},${250 + outerRadius * Math.sin(angle * Math.PI / 180)} ${250 + innerRadius * Math.cos((angle + angleWidth) * Math.PI / 180)},${250 + innerRadius * Math.sin((angle + angleWidth) * Math.PI / 180)}`}
+                <path
+                  key={`semi-circles-${i}`}
+                  d={`M ${centerX - radius} ${centerY} A ${radius} ${radius} 0 0 1 ${centerX + radius} ${centerY}`}
                   fill={color}
+                  transform={`rotate(${angle + 90} ${centerX} ${centerY})`}
                 />
               );
             })}
+
+
+            {/* Light blue semi-circles above the blue ones */}
+            {Array.from({ length: 20 }).map((_, i) => {
+              const angle = (i * 360) / 20 + 2; // Added 9 degrees offset to rotate right
+              const color = '#87CEEB'; // Light blue color
+              const radius = 33;
+              const centerRadius = 175; // Position between yellow circle and blue semi-circles
+              const centerX = 250 + centerRadius * Math.cos(angle * Math.PI / 180);
+              const centerY = 250 + centerRadius * Math.sin(angle * Math.PI / 180);
+              
+              return (
+                <path
+                  key={`light-blue-semi-circles-${i}`}
+                  d={`M ${centerX - radius} ${centerY} A ${radius} ${radius} 0 0 1 ${centerX + radius} ${centerY}`}
+                  fill={color}
+                  transform={`rotate(${angle + 90} ${centerX} ${centerY})`}
+                />
+              );
+            })}
+
+            
 
             {/* Maroon decorative ring */}
             <circle
