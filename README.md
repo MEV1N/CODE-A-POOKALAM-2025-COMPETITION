@@ -11,15 +11,18 @@
 ### Description
 My digital Pookalam is a stunning web-based recreation of traditional Kerala floral art combined with the iconic Theyyam cultural heritage, built using React, TypeScript, and modern web technologies. This project beautifully merges the geometric precision of Pookalam designs with the mystical essence of Theyyam, creating a unique digital tribute to Kerala's rich cultural traditions.
 
-The design features intricate concentric patterns with alternating colored triangular borders, decorative geometric overlays, and a central Theyyam face that represents the divine performer from Kerala's traditional ritual art form. Using SVG graphics and React components, the Pookalam showcases layered circular patterns with vibrant colors including traditional reds, yellows, greens, and maroons that are characteristic of both Pookalam and Theyyam art forms.
+The design features intricate concentric patterns with alternating colored triangular borders, decorative geometric overlays, and a central Theyyam face that represents the divine performer from Kerala's traditional ritual art form. Using SVG graphics and React components, the Pookalam showcases layered circular patterns with a warm autumn color palette featuring deep maroons, golden yellows, rust oranges, and vermilion reds that are characteristic of both Pookalam and Theyyam art forms.
 
 ### Design Elements
-- **Outer Border**: 32 alternating red and yellow triangular petals forming the outermost ring
-- **Secondary Layer**: 24 triangular patterns in red and yellow creating depth
-- **Decorative Rings**: Maroon and cream colored circular bands
-- **Geometric Overlays**: Rotating rectangular patterns with transparency effects
-- **Central Theyyam**: Traditional Theyyam face with detailed eyes, nose, and decorative elements
-- **Floral Accents**: 28 small decorative flowers arranged in a circular pattern
+- **Outer Border**: 32 alternating Golden Yellow and Rust Orange triangular petals forming the outermost ring
+- **Secondary Layer**: Decorative scallop petals in rich Vermilion creating depth and texture
+- **Diamond Pattern**: Alternating Cream and Orange diamond shapes in the middle layer
+- **Inner Circle**: Ochre Yellow central circle with intricate detailing
+- **Decorative Rings**: Mahogany colored circular bands providing structural definition
+- **Geometric Overlays**: Rotating rectangular patterns in Rust Orange and Golden Yellow with transparency effects
+- **Central Theyyam**: Traditional Theyyam face with detailed eyes, nose, and decorative elements in Mahogany and Cream
+- **Floral Accents**: 28 small decorative flowers in Vermilion and Golden Yellow arranged in a circular pattern
+- **Background**: Deep Dark Maroon providing rich contrast and traditional aesthetic
 
 ### Preview
 ![My Pookalam](image.png)
@@ -27,8 +30,10 @@ The design features intricate concentric patterns with alternating colored trian
 
 ### Features
 - **Traditional Kerala Art Fusion**: Combines Pookalam floral patterns with Theyyam cultural elements
-- **Geometric Precision**: Mathematical arrangement of patterns and colors
-- **Cultural Authenticity**: Uses traditional Kerala color schemes and design motifs
+- **Geometric Precision**: Mathematical arrangement of patterns and colors using SVG graphics
+- **Authentic Color Palette**: Features traditional autumn colors - Dark Maroon, Golden Yellow, Rust Orange, Vermilion, Mahogany, Cream, and Ochre Yellow
+- **Cultural Authenticity**: Uses traditional Kerala design motifs and color schemes representing festival aesthetics
+- **Layered Design**: Multiple concentric layers creating depth and visual complexity
 - **Responsive Design**: Built with modern web technologies for cross-device compatibility
 
 ## 🚀 How to Run
