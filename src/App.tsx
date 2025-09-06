@@ -2,7 +2,7 @@
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center p-8">
+    <div className="min-h-screen flex items-center justify-center p-8" style={{backgroundColor: '#6A040F'}}>
       <div className="relative">
         <div className="relative w-[500px] h-[500px]">
           {/* SVG Container for the entire Pookalam */}
@@ -27,7 +27,7 @@ function App() {
               </radialGradient>
             </defs>
 
-            {/*Green circle below the pointy triangles */}
+            {/*Deep Coconut Green outer circle */}
             <circle
               cx="250"
               cy="250"
@@ -38,8 +38,8 @@ function App() {
             {/* Outer triangular border pattern */}
             {Array.from({ length: 32 }).map((_, i) => {
               const angle = (i * 360) / 32;
-              const isRed = i % 2 === 0;
-              const color = isRed ? '#7F1D1D' : '#F59E0B';
+              const isGolden = i % 2 === 0;
+              const color = isGolden ? '#FFB703' : '#E85D04'; // Alternating Golden Yellow and Rust Orange
               const innerRadius = 220;
               const outerRadius = 250;
               const angleWidth = 6; // Wider triangles
@@ -55,18 +55,18 @@ function App() {
 
            
 
-           {/*Green circle below the pointy triangles */}
+           {/*Ochre Yellow background circle */}
             <circle
               cx="250"
               cy="250"
               r="219"
-              fill="yellow"
+              fill="#E9C46A"
             />
-            {/* Additional semi-circles over the green circle */}
+            {/* Vermilion semi-circles (Scallop Petals) */}
             {Array.from({ length: 20 }).map((_, i) => {
               const angle = (i * 360) / 20 + 2; // Offset to point to gaps between outer triangles
               const isRed = i % 2 === 0;
-              const color = isRed ? 'blue' : 'blue';
+              const color = isRed ? '#D62828' : '#D62828'; // Vermilion color
               const radius = 33; // Increased radius of each semi-circle
               const centerRadius = 185; // Distance from center to semi-circle centers
               const centerX = 250 + centerRadius * Math.cos(angle * Math.PI / 180);
@@ -83,18 +83,19 @@ function App() {
             })}
 
 
-            {/* Light blue semi-circles above the blue ones */}
+            {/* Cream and Orange semi-circles (Diamond Layer) */}
             {Array.from({ length: 20 }).map((_, i) => {
               const angle = (i * 360) / 20 + 2; // Added 9 degrees offset to rotate right
-              const color = '#87CEEB'; // Light blue color
+              const isCream = i % 2 === 0;
+              const color = isCream ? '#FAF3E0' : '#FF7F11'; // Alternating Cream and Orange
               const radius = 33;
-              const centerRadius = 175; // Position between yellow circle and blue semi-circles
+              const centerRadius = 175; // Position between leaf green circle and hibiscus red semi-circles
               const centerX = 250 + centerRadius * Math.cos(angle * Math.PI / 180);
               const centerY = 250 + centerRadius * Math.sin(angle * Math.PI / 180);
               
               return (
                 <path
-                  key={`light-blue-semi-circles-${i}`}
+                  key={`diamond-layer-semi-circles-${i}`}
                   d={`M ${centerX - radius} ${centerY} A ${radius} ${radius} 0 0 1 ${centerX + radius} ${centerY}`}
                   fill={color}
                   transform={`rotate(${angle + 90} ${centerX} ${centerY})`}
@@ -104,22 +105,22 @@ function App() {
 
             
 
-            {/* Maroon decorative ring */}
+            {/* Mahogany decorative ring */}
             <circle
               cx="250"
               cy="250"
               r="175"
-              fill="#7F1D1D"
-              stroke="#4a1413"
+              fill="#5C2C06"
+              stroke="#4A2305"
               strokeWidth="2"
             />
 
-            {/* Inner decorative pattern */}
+            {/* Inner decorative pattern - Ochre Yellow */}
             <circle
               cx="250"
               cy="250"
               r="150"
-              fill="#FEF3C7"
+              fill="#E9C46A"
             />
 
           
@@ -127,51 +128,51 @@ function App() {
           
            
 
-            {/* Rotating rectangles pattern */}
+            {/* Rotating rectangles pattern - Rust Orange */}
             {Array.from({ length: 24 }).map((_, i) => {
               const angle = (i * 15);
               return (
                 <g key={`rect-group-${i}`} transform={`rotate(${angle + 45} 250 250)`}>
-                  <rect x="145" y="145" width="210" height="210" fill="rgba(189,22,22, 0.5)" transform="rotate(45 250 250)" />
+                  <rect x="145" y="145" width="210" height="210" fill="rgba(232,93,4, 0.5)" transform="rotate(45 250 250)" />
                 </g>
               );
             })}
 
-            {/* Secondary rectangle pattern */}
+            {/* Secondary rectangle pattern - Golden Yellow */}
             {Array.from({ length: 24 }).map((_, i) => {
               const angle = (i * 15);
               return (
                 <g key={`rect2-group-${i}`} transform={`rotate(${angle + 7} 250 250)`}>
-                  <rect x="156" y="156" width="187" height="187" fill="rgba(252,84,4, 0.5)" transform="rotate(45 250 250)" />
+                  <rect x="156" y="156" width="187" height="187" fill="rgba(255,183,3, 0.5)" transform="rotate(45 250 250)" />
                 </g>
               );
             })}
 
           
 
-            {/* Outer design circles */}
-            <circle cx="250" cy="250" r="115" fill="#470703" />
-            <circle cx="250" cy="250" r="120" fill="#3d1001" />
+            {/* Outer design circles - Mahogany */}
+            <circle cx="250" cy="250" r="115" fill="#5C2C06" />
+            <circle cx="250" cy="250" r="120" fill="#4A2305" />
 
             {/* Central crown/face area */}
-            <circle cx="250" cy="250" r="50" fill="white" />
-            <circle cx="250" cy="235" r="50" fill="#f27318" />
-            <ellipse cx="250" cy="260" rx="32" ry="10" fill="#eb4c17" />
+            <circle cx="250" cy="250" r="50" fill="#FAF3E0" />
+            <circle cx="250" cy="235" r="50" fill="#D62828" />
+            <ellipse cx="250" cy="260" rx="32" ry="10" fill="#5C2C06" />
 
             {/* Eyes */}
-            <ellipse cx="235" cy="240" rx="12" ry="5" fill="black" />
-            <ellipse cx="235" cy="240" rx="8" ry="3" fill="white" />
-            <circle cx="235" cy="240" r="2" fill="black" />
+            <ellipse cx="235" cy="240" rx="12" ry="5" fill="#5C2C06" />
+            <ellipse cx="235" cy="240" rx="8" ry="3" fill="#FAF3E0" />
+            <circle cx="235" cy="240" r="2" fill="#5C2C06" />
             
-            <ellipse cx="265" cy="240" rx="12" ry="5" fill="black" />
-            <ellipse cx="265" cy="240" rx="8" ry="3" fill="white" />
-            <circle cx="265" cy="240" r="2" fill="black" />
+            <ellipse cx="265" cy="240" rx="12" ry="5" fill="#5C2C06" />
+            <ellipse cx="265" cy="240" rx="8" ry="3" fill="#FAF3E0" />
+            <circle cx="265" cy="240" r="2" fill="#5C2C06" />
 
             {/* Nose */}
-            <ellipse cx="250" cy="250" rx="4" ry="6" fill="none" stroke="black" strokeWidth="1" />
+            <ellipse cx="250" cy="250" rx="4" ry="6" fill="none" stroke="#5C2C06" strokeWidth="1" />
             
             {/* Lips */}
-            <ellipse cx="250" cy="263" rx="8" ry="3" fill="#cc0a14" />
+            <ellipse cx="250" cy="263" rx="8" ry="3" fill="#5C2C06" />
 
             {/* Decorative flowers around */}
             {Array.from({ length: 28 }).map((_, i) => {
@@ -181,8 +182,8 @@ function App() {
               const y = 250 + radius * Math.sin(angle * Math.PI / 180);
               return (
                 <g key={`flower-${i}`} transform={`translate(${x} ${y}) rotate(${angle})`}>
-                  <ellipse rx="3" ry="1.5" fill="#c20a4a" />
-                  <ellipse rx="3" ry="1.5" fill="#f7b705" transform="rotate(30)" />
+                  <ellipse rx="3" ry="1.5" fill="#D62828" />
+                  <ellipse rx="3" ry="1.5" fill="#FFB703" transform="rotate(30)" />
                 </g>
               );
             })}
